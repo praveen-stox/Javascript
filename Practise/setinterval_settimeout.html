@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setinterval and settimeout</title>
+</head>
+
+<body>
+    <div class="container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita minus nostrum numquam atque necessitatibus maxime praesentium blanditiis dignissimos eos quia sunt, rerum vero id quas mollitia. Hic, ipsam quae consequuntur voluptatibus non, veniam,
+        perspiciatis minus quidem nulla error ipsa eaque tempore unde eum quo voluptas corrupti harum a amet id. Officia enim alias ut, provident delectus suscipit cumque magnam vel molestiae! Itaque et natus facere inventore eveniet perferendis voluptates
+        magni enim consequuntur, modi molestiae veritatis, aut nobis incidunt quod? Quae architecto repudiandae quam pariatur unde ducimus quos quis quisquam. Natus iusto id inventore voluptatibus velit officia necessitatibus vel veritatis nobis. Quo
+        itaque consequatur voluptates corporis nobis labore, atque voluptatum impedit porro! Repudiandae ullam, eos ipsa maxime itaque autem illo. Nisi atque illo quae veniam minus voluptatem maiores provident odit ad. Repellendus ratione, vitae odio
+        tenetur ducimus minus quidem nam dolore illum. Accusantium dolore, nemo eaque nam libero hic debitis et eius excepturi, laudantium natus a veritatis in harum veniam. Repellat nihil dignissimos magni alias aspernatur in commodi at quisquam est
+        asperiores quod corporis illum, saepe eum animi! Sequi facilis, est doloribus ut soluta exercitationem cum perspiciatis odit asperiores quasi molestiae iste, earum sed nihil temporibus debitis, quod fuga amet provident incidunt aut. Alias non
+        sapiente, impedit dolorem accusantium maiores quae quos dolorum atque, nihil eius excepturi nemo, quam autem reprehenderit error. Libero, delectus! Voluptates ratione quas consectetur, suscipit delectus provident nemo doloremque error debitis
+        corporis ullam laudantium repellendus numquam similique perferendis, impedit reiciendis excepturi deleniti enim natus deserunt qui accusantium? Debitis veritatis non quas reprehenderit vitae quibusdam quia doloremque, rem ducimus expedita fugit
+        in quam, quasi unde distinctio odio deleniti iusto cupiditate sunt atque corrupti ipsum praesentium illum! Quaerat, a? Atque blanditiis quasi ipsa laborum debitis. Provident sunt voluptates odio ipsam rerum vero deserunt minus autem. Incidunt
+        maxime consequatur quaerat?
+        <div><span id="time"></span></div>
+    </div>
+    <script>
+        function greet(name) {
+            console.log("Good Morning " + name);
+        }
+
+        // timeOut = setTimeout(greet, 3000, "praveen");
+        // console.log(timeOut);
+        // clearTimeout(timeOut);
+        //clearInterval();
+
+        // intervalId = setInterval(greet, 1000, "praveen");
+        // console.log(intervalId);
+        // clearInterval(intervalId);
+
+        function displayTime() {
+            time = new Date();
+            //console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displayTime, 1000);
+    </script>
+</body>
+
+</html>
